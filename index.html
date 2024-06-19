@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodSoft Landing Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .logo {
+        margin-top: 5px;
+        margin-left: 10px;
+        height: 5.6rem;
+        width: 20rem;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .items {
+        display: flex;
+        margin-top: 24px;
+        margin-right: 42px;
+      }
+      .items li {
+        list-style: none;
+        padding: 10px;
+        font-size: 23px;
+        color: rgb(44, 80, 132);
+        cursor: pointer;
+      }
+      .items li:hover {
+        text-decoration: underline;
+      }
+
+      .bg {
+        height: 550px;
+        width: 100%;
+      }
+      .container {
+        position: relative;
+        text-align: center;
+      }
+      .overlayText {
+        position: absolute;
+        top: 15%;
+        margin-left: 250px;
+      }
+      .overlayText h1 {
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: rgb(60, 29, 29);
+        margin-bottom: 40px;
+      }
+      .overlayText h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: normal;
+      }
+      .btn {
+        background-color: rgb(22, 140, 208);
+        color: black;
+        border-radius: 500px;
+        border: none;
+        margin: 5px;
+        padding: 12px;
+        cursor: pointer;
+        font-size: 20px;
+        width: 150px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .btn:hover {
+        background-color: grey;
+        color: white;
+      }
+
+      .sec2 {
+        margin: 100px;
+        margin-right: 200px;
+        margin-left: 130px;
+      }
+      .para {
+        font-size: larger;
+      }
+      .para h1 {
+        font-size: 45px;
+      }
+      .para p {
+        margin: 25px;
+        margin-left: 0;
+        line-height: 30px;
+      }
+
+      .sec3 {
+        background-color: rgb(211, 223, 229);
+        padding: 100px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+      }
+      .sec4 {
+        padding-left: 55px;
+        padding-top: 40px;
+      }
+      .sec5 {
+        margin-left: 350px;
+      }
+      .sec3 h1 {
+        margin-left: 200px;
+        font-size: 45px;
+        color: rgb(28, 83, 129);
+        text-decoration: underline;
+      }
+      .img1,
+      .img2,
+      .img3 {
+        height: 300px;
+        width: 400px;
+        margin: 70px;
+      }
+      .img2 {
+        margin-top: -0.5px;
+      }
+      .con3 {
+        display: flex;
+      }
+
+      .contact {
+        line-height: 25px;
+        padding-top: 30px;
+      }
+      .contact h2 {
+        font-size: 40px;
+        /* width: 500px; */
+        line-height: 50px;
+        margin-bottom: 50px;
+      }
+
+      .contact p {
+        font-size: larger;
+        margin-bottom: 30px;
+      }
+      #btn2 {
+        margin-left: 130px;
+        margin-top: -20px;
+      }
+      #intern{
+        margin-left: 630px;
+        margin-top: 30px;
+        text-decoration: underline;
+      }
+      .templates {
+        display: grid;
+        height: 1700px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        /* border: 2px solid black; */
+        padding-left: 143px;
+        padding-right: 143px;
+      }
+      .temp {
+        padding: 50px;
+        padding-bottom: 0;
+        align-self: center;
+        justify-self: center;
+        display: grid;
+      }
+      
+      #img3{
+        margin-top: -50px;
+      }
+      #img3{
+        margin-top: -5px;
+      }
+      #btn3{
+        margin-top: 50px;
+      }
+      #img6{
+        width: 200px;
+        height: 170px;
+
+      }    
+      .temp h1 {
+        margin-bottom: 20px;
+        justify-self: center;
+      }
+      .temp p {
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 20px;
+        line-height: 18px;
+      }
+      .temp button {
+        justify-self: center;
+      }
+      .images {
+        height: 200px;
+        width: 250px;
+        margin-bottom: 25px;
+        justify-self: center;
+      }
+      .sec7{
+        margin-top: 100px;
+        padding: 200px;
+        background-color: grey;
+      }
+      .subscriber{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img class="logo" src="logo.avif" alt="" srcset="" />
+      <ul class="items">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Products</li>
+        <li>Interships</li>
+        <li>Jobs</li>
+        <li>Verification</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+
+    <section class="sec1">
+      <div class="container">
+        <img class="bg" src="background.avif" alt="" srcset="" />
+        <div class="overlayText">
+          <h1>Take Your Career to the Next Level with CodSoft</h1>
+          <h2>Join Our Exciting Internship Journey</h2>
+          <button class="btn">Apply</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec2">
+      <div class="para">
+        <h1>Who We Are</h1>
+        <p>
+          <b>CodSoft</b> are IT services and IT consultancy that specializes in
+          creating innovative solutions for businesses. We are passionate about
+          technology and believe in the power of software to transform the
+          world. Our internship program is just one of the ways in which we are
+          investing in the future of the industry.
+        </p>
+        <p>
+          At <b>CodSoft</b>, we believe practical knowledge is the key to
+          success in the tech industry. Our aim is to help students lacking
+          basic skills by offering hands-on learning through live projects and
+          real-world examples.
+        </p>
+      </div>
+    </section>
+
+    <section class="sec3">
+      <h1>We Provide All Exclusive services For Clients</h1>
+      <div class="con3">
+        <img class="img1" src="img1.webp" alt="" srcset="" />
+        <div class="contact">
+          <h2>We build websites and <br />web applications.</h2>
+          <p>Today, every business should have a website.</p>
+          <p>
+            No matter how small or large your business, having a website is must
+            have <br />at this time.
+          </p>
+          <p>Having a website help you to maintain your online presence.</p>
+          <button class="btn" id="btn2">Contact Us</button>
+        </div>
+      </div>
+    </section>
+    <section class="sec4">
+      <div class="con3">
+        <img class="img2" src="img2.gif" alt="" srcset="" />
+        <div class="contact">
+          <h2>E-Commerce Development.</h2>
+          <p>
+            Our talented web development team has years of experience<br />
+            building websites from small to large.
+          </p>
+          <p>We deliver projects with 100% user satisfaction.</p>
+          <p>
+            Whatever functionality you need for the web, we will implement it.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="sec5">
+      <div class="con3">
+        <div class="contact">
+          <h2>Need website for your business?</h2>
+          <p>Want to sell your products online?</p>
+          <p>
+            We often develop Ecommerce for businesses who want to sell their<br />
+            products or services online.
+          </p>
+          <p>Let's move your products towards online...</p>
+          <button class="btn" id="btn2">Contact Us</button>
+        </div>
+        <img class="img3" src="img3.gif" alt="" srcset="" />
+      </div>
+    </section>
+    <section class="sec6">
+      <h1 id="intern">INTERNSHIP POSITION</h1>
+      <div class="templates">
+        <div class="temp" class="temp1">
+          <img class="images" src="temp1.gif" alt="" srcset="" />
+          <h1>Web Development</h1>
+          <p>
+            web development internship that provides practical work experience
+            and an introduction to crafting and enhancing web-based systems.
+            This opportunity offers engaging challenges and real-world projects,
+            allowing you to gain hands-on experience in the dynamic fields of
+            web and app development. Join our award-winning innovation team and
+            kickstart your journey to success in a supportive and enriching
+            environment.
+          </p>
+          <button class="btn">Apply</button>
+        </div>
+        <div class="temp" class="temp1">
+          <img class="images" src="temp2.gif" alt="" srcset="" />
+          <h1>Android Development</h1>
+          <p>
+            Android, the user-friendly open-source operating system, has transformed the way we access internet applications and carry out important tasks on our mobile devices. At CODSOFT, we understand the growing preference for mobile usage and offer the ideal starting point for your app development journey. Discover the simplicity of creating your first app with us and unlock a world of endless possibilities in the realm of mobile innovation.
+          </p>
+          <button class="btn">Apply</button>
+        </div>
+        <div class="temp" class="temp3">
+          <img class="images" id="img3" src="temp3.webp" alt="" srcset="" />
+          <h1>Data Science </h1>
+          <p id="p3">
+            Remote Data Science Internships Are A Unique Chance To Gain Experience In The Midst Of The Virtual Workforce While Remaining Immersed In One Of The Top Organizations In The Field. Data Analysis Internships Are Some Of The Most Competitive And Popular Within The Broader Data Science Field.
+          </p>
+          <button id="btn3" class="btn">Apply</button>
+        </div>
+        <div class="temp" class="temp1">
+          <img class="images" src="temp4.avif" alt="" srcset="" />
+          <h1>Java Programming</h1>
+          <p>
+            Become a Java programming master from the convenience of your own home and unlock incredible job prospects with our certification program. Join our comprehensive 4-week internship program, where you'll learn everything from web application development to deployment using Java Build a solid foundation for your career with hands-on training and real-world application in a supportive and collaborative environment.
+          </p>
+          <button class="btn">Apply</button>
+        </div>
+        <div class="temp" class="temp1">
+          <img class="images" src="temp5.avif" alt="" srcset="" />
+          <h1>C++ Programming</h1>
+          <p>
+            Gain mastery in C++ programming from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment using C++. Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.
+          </p>
+          <button class="btn">Apply</button>
+        </div>
+        <div class="temp" class="temp1">
+          <img class="images" id="img6" src="temp6.avif" alt="" srcset="" />
+          <h1 id="h1-6">Python Programming</h1>
+          <p>
+            Join our 4-week comprehensive internship program and master the fundamentals of programming in Python from the comfort of your own home. Gain the skills and knowledge to apply for exciting job opportunities in the field. In this program, you will learn everything from web development to the deployment of Python-based web applications. Get certified and enhance your career prospects. 
+          </p>
+          <button class="btn">Apply</button>
+        </div>
+        <div class="temp" class="temp1">
+          <img class="images" src="temp7.gif" alt="" srcset="" />
+          <h1>UI/UX Design</h1>
+          <p>
+            Gain mastery in UI/UX Design from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.
+          </p>
+          <button class="btn">Apply</button>
+        </div>
+        <div class="temp" class="temp1">
+          <img class="images" src="temp8.webp" alt="" srcset="" />
+          <h1>Artificial intelligence</h1>
+          <p>
+            Gain mastery in Artificial intelligence from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.
+          </p>
+          <button class="btn">Apply</button>
+        </div>
+        <div class="temp" class="temp1">
+          <img class="images" src="temp9.gif" alt="" srcset="" />
+          <h1>Machine learning</h1>
+          <p>
+            Gain mastery in Machine learning from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.
+          </p>
+          <button class="btn">Apply</button>
+        </div>
+        </section>
+
+        <!-- <section class="sec7">
+            <div>
+                <h1>Our Growing Online Community</h1>
+            </div>
+            <div>
+                <p>Connect with a community of individuals who share your vision, unlocking boundless <br>opportunities and fostering personal growth as you pursue success.</p>
+            </div>
+            <div class="subscriber">
+                <div>240K+<br>LinkedIn Community</div>
+                <div>90K+<br>Telegram Community</div>
+                <div>20K+<br>Instagram Community</div>
+                <div>6K+<br>Facebook Community</div>
+            </div>
+        </section> -->
+  </body>
+  
+</html>
